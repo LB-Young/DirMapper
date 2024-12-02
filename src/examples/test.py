@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import asyncio
 from llm_client import client, model
 from DirMapper.DirMapper import DirMapper
@@ -16,3 +20,5 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
+
